@@ -1,0 +1,81 @@
+.process-section {
+  padding: 8rem 2rem;
+  background-color: #ffffff;
+}
+
+.process-container {
+  max-width: 1200px;
+  margin: 0 auto;
+}
+
+.section-desc {
+  color: #666;
+  font-size: 1.1rem;
+  margin-top: 1rem;
+  max-width: 600px;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+.process-steps-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+  gap: 3rem;
+  margin-top: 5rem;
+  position: relative;
+}
+
+/* Connecting line in desktop */
+@media (min-width: 1024px) {
+  .process-steps-grid::before {
+    content: '';
+    position: absolute;
+    top: 40px;
+    left: 10%;
+    right: 10%;
+    height: 2px;
+    background: #e2e8f0;
+    z-index: 0;
+  }
+}
+
+.process-step-card {
+  position: relative;
+  text-align: center;
+  z-index: 1;
+}
+
+.step-number {
+  width: 80px;
+  height: 80px;
+  background: var(--primary-color);
+  color: white;
+  border-radius: 50%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-size: 1.5rem;
+  font-weight: 800;
+  margin: 0 auto 2rem;
+  box-shadow: 0 10px 20px rgba(0, 80, 255, 0.2);
+}
+
+.step-title {
+  font-size: 1.5rem;
+  font-weight: 700;
+  color: #0c162d;
+  margin-bottom: 1rem;
+}
+
+.step-desc {
+  color: #4a5568;
+  font-size: 1rem;
+  line-height: 1.6;
+}
+
+@media (max-width: 768px) {
+  .process-steps-grid {
+    grid-template-columns: 1fr;
+    gap: 4rem;
+  }
+}

@@ -1,0 +1,79 @@
+.reasons-section {
+  padding: 10rem 2rem;
+  background-color: #f8faff;
+  position: relative;
+}
+
+.reasons-container {
+  max-width: 1400px;
+  margin: 0 auto;
+}
+
+.reasons-main-title {
+  text-align: center;
+  font-size: clamp(2.5rem, 4vw, 3.5rem);
+  font-weight: 800;
+  margin-bottom: 6rem;
+  color: #1a365d;
+  letter-spacing: -0.03em;
+}
+
+.timer-icon-wrapper.mini {
+  margin-bottom: 2rem;
+  display: flex;
+  justify-content: center;
+  color: #ff7e00;
+}
+
+.reasons-grid {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 5rem;
+}
+
+.reason-col h3 {
+  font-size: 1.8rem;
+  font-weight: 800;
+  margin-bottom: 1.5rem;
+  color: #1a365d;
+}
+
+.reason-col p {
+  color: #4a5568;
+  line-height: 1.8;
+  margin-bottom: 2.5rem;
+  font-size: 1.15rem;
+}
+
+.reason-checks {
+  list-style: none;
+  display: flex;
+  flex-direction: column;
+  gap: 1.2rem;
+}
+
+.reason-checks li {
+  display: flex;
+  align-items: center;
+  gap: 1rem;
+  color: #2d3748;
+  font-weight: 600;
+  font-size: 1.05rem;
+}
+
+.check-icon {
+  color: #2ecc71;
+  flex-shrink: 0;
+  background: rgba(46, 204, 113, 0.1);
+  padding: 4px;
+  border-radius: 50%;
+  width: 28px;
+  height: 28px;
+}
+
+@media (max-width: 1024px) {
+  .reasons-grid {
+    grid-template-columns: 1fr;
+    gap: 4rem;
+  }
+}

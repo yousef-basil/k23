@@ -1,0 +1,65 @@
+.circuit-section {
+  padding: 8rem 2rem;
+  background: #fff;
+}
+
+.circuit-container {
+  max-width: 1400px;
+  margin: 0 auto;
+  display: grid;
+  grid-template-columns: 1fr 1.5fr;
+  gap: 4rem;
+  align-items: center;
+}
+
+.circuit-heading {
+  font-size: 3rem;
+  font-weight: 800;
+  color: #ccd2de;
+  margin-bottom: 1rem;
+}
+
+.circuit-heading.orange {
+  color: #1a365d;
+  position: relative;
+}
+
+.circuit-heading.orange::before {
+  content: '';
+  position: absolute;
+  left: -2rem;
+  top: 0;
+  bottom: 0;
+  width: 5px;
+  background: #ff7e00;
+}
+
+[dir="rtl"] .circuit-heading.orange::before {
+  left: auto;
+  right: -2rem;
+}
+
+.circuit-heading.gray {
+  color: #ccd2de;
+}
+
+.circuit-text-group {
+  margin-bottom: 4rem;
+}
+
+.circuit-text-group p {
+  color: #4a5568;
+  line-height: 1.6;
+  font-size: 1.1rem;
+}
+
+.circuit-visual svg {
+  width: 100%;
+  height: auto;
+}
+
+@media (max-width: 1024px) {
+  .circuit-container {
+    grid-template-columns: 1fr;
+  }
+}
